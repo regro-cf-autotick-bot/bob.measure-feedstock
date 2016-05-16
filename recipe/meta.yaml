@@ -16,8 +16,7 @@ build:
   - bob_apply_threshold.py = bob.measure.script.apply_threshold:main
   - bob_plot_cmc.py = bob.measure.script.plot_cmc:main
   number: 1
-  skip: true  # [not linux]
-  script: python -B setup.py install --single-version-externally-managed --record record.txt
+  skip: true  # [win]
 
 requirements:
   build:
