@@ -7,7 +7,7 @@ package:
 source:
   fn: bob.measure-{{ version }}.zip
   md5: 5b65f1c934d6b019f00d5ce07fd6698a
-  url: https://pypi.python.org/packages/source/b/bob.measure/bob.measure-{{ version }}.zip
+  url: https://pypi.io/packages/source/b/bob.measure/bob.measure-{{ version }}.zip
 
 build:
   entry_points:
