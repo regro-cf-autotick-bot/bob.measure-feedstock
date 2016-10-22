@@ -1,4 +1,4 @@
-{% set version = "2.1.3" %}
+{% set version = "2.2.0" %}
 
 package:
   name: bob.measure
@@ -6,7 +6,7 @@ package:
 
 source:
   fn: bob.measure-{{ version }}.zip
-  md5: 48bf7050b9f51166419349d283752b81
+  md5: 8191501e4c3c4ffdded42b37922b1628
   url: https://pypi.io/packages/source/b/bob.measure/bob.measure-{{ version }}.zip
 
 build:
