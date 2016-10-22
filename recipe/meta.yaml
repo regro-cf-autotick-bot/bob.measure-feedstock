@@ -30,6 +30,7 @@ requirements:
   - matplotlib
   - pkg-config
   - boost 1.61.*
+  - docopt
 
   run:
   - python
@@ -40,6 +41,7 @@ requirements:
   - bob.io.base
   - matplotlib
   - boost 1.61.*
+  - docopt
 
 test:
   commands:
