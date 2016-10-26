@@ -11,53 +11,54 @@ source:
 
 build:
   entry_points:
-  - bob_compute_perf.py = bob.measure.script.compute_perf:main
-  - bob_eval_threshold.py = bob.measure.script.eval_threshold:main
-  - bob_apply_threshold.py = bob.measure.script.apply_threshold:main
-  - bob_plot_cmc.py = bob.measure.script.plot_cmc:main
+    - bob_compute_perf.py = bob.measure.script.compute_perf:main
+    - bob_eval_threshold.py = bob.measure.script.eval_threshold:main
+    - bob_apply_threshold.py = bob.measure.script.apply_threshold:main
+    - bob_plot_cmc.py = bob.measure.script.plot_cmc:main
   number: 0
   skip: true  # [win]
 
 requirements:
   build:
-  - python
-  - setuptools
-  - bob.extension
-  - bob.blitz
-  - bob.core >2.0.4
-  - bob.math
-  - bob.io.base
-  - matplotlib
-  - pkg-config
-  - boost 1.61.*
-  - docopt
+    - python
+    - toolchain
+    - setuptools
+    - bob.extension
+    - bob.blitz
+    - bob.core >2.0.4
+    - bob.math
+    - bob.io.base
+    - matplotlib
+    - pkg-config
+    - boost 1.61.*
+    - docopt
 
   run:
-  - python
-  - bob.extension
-  - bob.blitz
-  - bob.core >2.0.4
-  - bob.math
-  - bob.io.base
-  - matplotlib
-  - boost 1.61.*
-  - docopt
+    - python
+    - bob.extension
+    - bob.blitz
+    - bob.core >2.0.4
+    - bob.math
+    - bob.io.base
+    - matplotlib
+    - boost 1.61.*
+    - docopt
 
 test:
   commands:
-  - bob_compute_perf.py --help
-  - bob_eval_threshold.py --help
-  - bob_apply_threshold.py --help
-  - bob_plot_cmc.py --help
-  - nosetests -sv bob.measure
+    - bob_compute_perf.py --help
+    - bob_eval_threshold.py --help
+    - bob_apply_threshold.py --help
+    - bob_plot_cmc.py --help
+    - nosetests -sv bob.measure
 
   imports:
-  - bob
-  - bob.measure
-  - bob.measure.script
+    - bob
+    - bob.measure
+    - bob.measure.script
 
   requires:
-  - nose
+    - nose
 
 about:
   home: https://www.idiap.ch/software/bob/
@@ -66,4 +67,4 @@ about:
 
 extra:
   recipe-maintainers:
-  - 183amir
+    - 183amir
